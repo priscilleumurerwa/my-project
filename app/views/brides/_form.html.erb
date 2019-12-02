@@ -1,0 +1,62 @@
+<%= form_with(model: bride, local: true) do |form| %>
+  <% if bride.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(bride.errors.count, "error") %> prohibited this bride from being saved:</h2>
+
+      <ul>
+        <% bride.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.text_field :email %>
+  </div>
+
+  <div class="field">
+    <%= form.label :birth_date %>
+    <%= form.date_select :birth_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :gender %>
+    <%= form.text_field :gender %>
+  </div>
+
+  <div class="field">
+    <%= form.label :country %>
+    <%= form.text_field :country %>
+  </div>
+
+  <div class="field">
+    <%= form.label :district %>
+    <%= form.text_field :district %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sector %>
+    <%= form.text_field :sector %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cell %>
+    <%= form.text_field :cell %>
+  </div>
+
+  <div class="field">
+    <%= form.label :phone %>
+    <%= form.text_field :phone %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

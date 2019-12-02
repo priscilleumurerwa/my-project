@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Grooms</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Birth date</th>
+      <th>Gender</th>
+      <th>Country</th>
+      <th>District</th>
+      <th>Sector</th>
+      <th>Cell</th>
+      <th>Phone</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @grooms.each do |groom| %>
+      <tr>
+        <td><%= groom.name %></td>
+        <td><%= groom.email %></td>
+        <td><%= groom.birth_date %></td>
+        <td><%= groom.gender %></td>
+        <td><%= groom.country %></td>
+        <td><%= groom.district %></td>
+        <td><%= groom.sector %></td>
+        <td><%= groom.cell %></td>
+        <td><%= groom.phone %></td>
+        <td><%= link_to 'Show', groom %></td>
+        <td><%= link_to 'Edit', edit_groom_path(groom) %></td>
+        <td><%= link_to 'Destroy', groom, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Groom', new_groom_path %>

@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @bride.name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @bride.email %>
+</p>
+
+<p>
+  <strong>Birth date:</strong>
+  <%= @bride.birth_date %>
+</p>
+
+<p>
+  <strong>Gender:</strong>
+  <%= @bride.gender %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @bride.country %>
+</p>
+
+<p>
+  <strong>District:</strong>
+  <%= @bride.district %>
+</p>
+
+<p>
+  <strong>Sector:</strong>
+  <%= @bride.sector %>
+</p>
+
+<p>
+  <strong>Cell:</strong>
+  <%= @bride.cell %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @bride.phone %>
+</p>
+
+<%= link_to 'Edit', edit_bride_path(@bride) %> |
+<%= link_to 'Back', brides_path %>
