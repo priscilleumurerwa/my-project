@@ -1,9 +1,12 @@
 Rails.application.routes.draw do
-  resources :families
+  get 'comments/create'
+  resources :families do
+  resources :comments
+end
   resources :brides
   resources :grooms
   devise_for :users
-  mount LetterOpenerWeb::Engine, at: "/letter_opener"
-  root 'families#index'
+  # mount LetterOpenerWeb::Engine, at: "/letter_opener"
+  root 'welcome#index'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

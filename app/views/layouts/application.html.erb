@@ -7,17 +7,54 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   </head>
 
   <body>
-    <% if user_signed_in? %>
-  <li><%= link_to 'Logout', destroy_user_session_path, method: :delete %></li>
+    <nav class="navbar navbar-expand-lg navbar-light nav-head" style="background-color:navy;padding:10px;color:white">
+      <a class="navbar-brand" href="#">Welcome to sector </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+  <ul class="nav justify-content-end">
+      <% if user_signed_in? %>
+  <li class="nav-item">
+    <%= link_to 'grooms', grooms_url , class: 'btn btn-outline-primary'%>
+  </li>
+  <li class="nav-item">
+    <%= link_to 'brides', brides_url  ,class: 'btn btn-outline-primary'%>
+  <li class="nav-item">
+    <%= link_to 'families', families_url , class: 'btn btn-outline-primary'%>
+  </li>
+  <li class="nav-item">
+    <%= link_to 'Logout', destroy_user_session_path, method: :delete , class: 'btn btn-outline-primary'%>
+  </li>
   <% else %>
-    <li><%= link_to 'Login', new_user_session_path %></li>
-    <li><%= link_to 'Sign up', new_user_registration_path %></li>
+  <li class="nav-item">
+    <li><%= link_to 'Login', new_user_session_path ,class: 'btn btn-outline-primary'%>
+  </li>
+  <li class="nav-item">
+    <li><li><%= link_to 'Sign up', new_user_registration_path ,class: 'btn btn-outline-primary'%>
+  </li>
   <% end %>
+</ul>
+      </div>
+    </nav>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
     <%= yield %>
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-light nav-head bg-secondary fixed-bottom">
+      <a class="navbar-brand" href="#">Welcome to sector </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </nav>
+
   </body>
 </html>

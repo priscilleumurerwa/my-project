@@ -1,5 +1,4 @@
 <p id="notice"><%= notice %></p>
-
 <p>
   <strong>Category:</strong>
   <%= @family.category %>
@@ -14,6 +13,6 @@
   <strong>Bride:</strong>
   <%= @family.bride_id %>
 </p>
-
+<%= render'comments/comment' %>
 <%= link_to 'Edit', edit_family_path(@family) %> |
 <%= link_to 'Back', families_path %>
