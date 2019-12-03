@@ -70,6 +70,6 @@ class FamiliesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def family_params
-      params.require(:family).permit(:category, :groom_id, :bride_id)
+      params.require(:family).permit(:category, :groom_id)
     end
 end

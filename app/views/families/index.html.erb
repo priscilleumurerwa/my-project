@@ -16,8 +16,8 @@
     <% @families.each do |family| %>
       <tr>
         <td><%= family.category %></td>
-        <td><%= family.groom_id %></td>
-        <td><%= family.bride_id %></td>
+        <td><%= family.groom.name%></td>
+        <td><%= family.groom.bride.name %></td>
         <td><%= link_to 'Show', family %></td>
         <td><%= link_to 'Edit', edit_family_path(family) %></td>
         <td><%= link_to 'Destroy', family, method: :delete, data: { confirm: 'Are you sure?' } %></td>

@@ -56,6 +56,11 @@
     <%= form.text_field :phone %>
   </div>
 
+  <div class="field">
+    <%= form.label :bride %>
+    <%= form.collection_select :bride_id, Bride.order(:name),:id,:name, include_blank: true %>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>

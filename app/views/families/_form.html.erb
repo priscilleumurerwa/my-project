@@ -16,14 +16,11 @@
     <%= form.number_field :category %>
   </div>
 
-  <div class="field">
-    <%= form.label :groom_id %>
-    <%= form.text_field :groom_id %>
-  </div>
+
 
   <div class="field">
-    <%= form.label :bride_id %>
-    <%= form.text_field :bride_id %>
+    <%= form.label :groom %>
+    <%= form.collection_select :groom_id, Groom.order(:name),:id,:name, include_blank: true %>
   </div>
 
   <div class="actions">
