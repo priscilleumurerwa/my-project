@@ -1,146 +1,105 @@
 
 User.create!(
-  names: "priscille",
-  email: "priscille@gmail.com",
-  user_type: "admin",
+  email: "priscille1@gmail.com",
+  password: "123456",
+  password_confirmation: "123456"
+)
+User.create!(
+  email: "priscille2@gmail.com",
+  password: "123456",
+  password_confirmation: "123456"
+)
+User.create!(
+  email: "priscille3@gmail.com",
+  password: "123456",
+  password_confirmation: "123456"
+)
+User.create!(
+  email: "priscille4@gmail.com",
+  password: "123456",
+  password_confirmation: "123456"
+)
+User.create!(
+  email: "priscille5@gmail.com",
   password: "123456",
   password_confirmation: "123456"
   #watched_on: 5.days.ago
 )
 User.create!(
-  names: "priscille",
-  email: "priscille@gmail.com",
-  user_type: "admin",
-  password: "123456",
-  password_confirmation: "123456"
-  #watched_on: 5.days.ago
-)User.create!(
-  names: "priscille",
-  email: "priscille@gmail.com",
-  user_type: "admin",
-  password: "123456",
-  password_confirmation: "123456"
-  #watched_on: 5.days.ago
-)User.create!(
-  names: "priscille",
-  email: "priscille@gmail.com",
-  user_type: "admin",
-  password: "123456",
-  password_confirmation: "123456"
-  #watched_on: 5.days.ago
-)User.create!(
-  names: "priscille",
-  email: "priscille@gmail.com",
-  user_type: "admin",
-  password: "123456",
-  password_confirmation: "123456"
-  #watched_on: 5.days.ago
-)User.create!(
-  names: "priscille",
-  email: "priscille@gmail.com",
-  user_type: "admin",
-  password: "123456",
-  password_confirmation: "123456"
-  #watched_on: 5.days.ago
-)User.create!(
-  names: "priscille",
-  email: "priscille@gmail.com",
-  user_type: "admin",
-  password: "123456",
-  password_confirmation: "123456"
-  #watched_on: 5.days.ago
-)User.create!(
-  names: "priscille",
-  email: "priscille@gmail.com",
-  user_type: "admin",
-  password: "123456",
-  password_confirmation: "123456"
-  #watched_on: 5.days.ago
-)User.create!(
-  names: "priscille",
-  email: "priscille@gmail.com",
-  user_type: "admin",
-  password: "123456",
-  password_confirmation: "123456"
-  #watched_on: 5.days.ago
-)User.create!(
-  names: "priscille",
-  email: "priscille@gmail.com",
-  user_type: "admin",
-  password: "123456",
-  password_confirmation: "123456"
-  #watched_on: 5.days.ago
-)User.create!(
-  names: "priscille",
-  email: "priscille@gmail.com",
-  user_type: "admin",
+  email: "priscille6@gmail.com",
   password: "123456",
   password_confirmation: "123456"
   #watched_on: 5.days.ago
 )
 User.create!(
-  names: "priscille",
-  email: "priscille@gmail.com",
-  user_type: "admin",
+  email: "priscille7@gmail.com",
   password: "123456",
   password_confirmation: "123456"
-  #watched_on: 5.days.ago
-)User.create!(
-  names: "priscille",
-  email: "priscille@gmail.com",
-  user_type: "admin",
+)
+User.create!(
+  email: "priscille8@gmail.com",
   password: "123456",
   password_confirmation: "123456"
-  #watched_on: 5.days.ago
-)User.create!(
-  names: "priscille",
-  email: "priscille@gmail.com",
-  user_type: "admin",
+)
+User.create!(
+  email: "priscille9@gmail.com",
   password: "123456",
   password_confirmation: "123456"
-  #watched_on: 5.days.ago
-)User.create!(
-  names: "priscille",
-  email: "priscille@gmail.com",
-  user_type: "admin",
+)
+User.create!(
+  email: "priscille10@gmail.com",
   password: "123456",
   password_confirmation: "123456"
-  #watched_on: 5.days.ago
-)User.create!(
-  names: "priscille",
-  email: "priscille@gmail.com",
-  user_type: "admin",
+)
+User.create!(
+  email: "priscille11@gmail.com",
   password: "123456",
   password_confirmation: "123456"
-  #watched_on: 5.days.ago
-)User.create!(
-  names: "priscille",
-  email: "priscille@gmail.com",
-  user_type: "admin",
+)
+User.create!(
+  email: "priscille12@gmail.com",
   password: "123456",
   password_confirmation: "123456"
-  #watched_on: 5.days.ago
-)User.create!(
-  names: "priscille",
-  email: "priscille@gmail.com",
-  user_type: "admin",
+)
+User.create!(
+  email: "priscill13e@gmail.com",
   password: "123456",
   password_confirmation: "123456"
-  #watched_on: 5.days.ago
-)User.create!(
-  names: "priscille",
-  email: "priscille@gmail.com",
-  user_type: "admin",
+)
+User.create!(
+  email: "priscille14@gmail.com",
   password: "123456",
   password_confirmation: "123456"
-  #watched_on: 5.days.ago
-)User.create!(
-  names: "priscille",
-  email: "priscille@gmail.com",
-  user_type: "admin",
+)
+User.create!(
+  email: "priscille15@gmail.com",
   password: "123456",
   password_confirmation: "123456"
-  #watched_on: 5.days.ago
+)
+User.create!(
+  email: "priscille16@gmail.com",
+  password: "123456",
+  password_confirmation: "123456"
+)
+User.create!(
+  email: "priscille17@gmail.com",
+  password: "123456",
+  password_confirmation: "123456"
+)
+User.create!(
+  email: "priscille18@gmail.com",
+  password: "123456",
+  password_confirmation: "123456"
+)
+User.create!(
+  email: "priscille19@gmail.com",
+  password: "123456",
+  password_confirmation: "123456"
+)
+User.create!(
+  email: "priscille20@gmail.com",
+  password: "123456",
+  password_confirmation: "123456"
 )
 
 

@@ -37,12 +37,6 @@ ActiveRecord::Schema.define(version: 2019_12_03_102939) do
     t.index ["family_id"], name: "index_comments_on_family_id"
   end
 
-  create_table "examples", force: :cascade do |t|
-    t.string "title"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
   create_table "families", force: :cascade do |t|
     t.integer "category"
     t.bigint "groom_id", null: false
