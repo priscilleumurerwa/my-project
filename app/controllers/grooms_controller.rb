@@ -16,7 +16,6 @@ class GroomsController < ApplicationController
 
   def edit
   end
-
   def create
     @groom = Groom.new(groom_params)
 
@@ -26,7 +25,6 @@ class GroomsController < ApplicationController
         render :new
       end
   end
-
   def update
       if @groom.update(groom_params)
         redirect_to @groom, notice: 'Groom was successfully updated.'

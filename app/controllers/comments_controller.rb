@@ -2,7 +2,6 @@ class CommentsController < ApplicationController
   before_action :find_post
   before_action :find_comment, only: [:destroy, :edit , :update]
 
-
   def index
     @comments = Comment.all
   end
@@ -15,14 +14,12 @@ class CommentsController < ApplicationController
       redirect_to family_path(@family), alert: 'Please enter the comment!!!!!'
     end
   end
-
   def destroy
     @comment.destroy
     redirect_to family_path(@family)
   end
   def edit
   end
-
   def update
     if @comment.update(params[:comment].permit(:content))
       redirect_to family_path(@family)
