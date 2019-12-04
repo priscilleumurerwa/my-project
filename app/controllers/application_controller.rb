@@ -1,5 +1,5 @@
 class ApplicationController < ActionController::Base
-  before_filter :set_search
+   before_action :set_search
 
   def set_search
   @search=Groom.search(params[:q])
