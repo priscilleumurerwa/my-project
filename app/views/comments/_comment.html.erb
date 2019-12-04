@@ -1,12 +1,10 @@
-<ul>
+  <strong>Comments</strong><br>
   <% @comments.each do |comment| %>
     <% if comment.id.present? %>
-      <li>
-        <p><br><%= comment.content %><br>
+        <small><%= comment.content %><br>
         <%= link_to "delete", [comment.family, comment], method: :delete, class:"genric-btn danger-border circle" %>
-        <%= link_to "edit ", edit_family_comment_path(comment.family, comment), class:"genric-btn success-border circle" %></p>
-        </li>
+        <%= link_to "edit ", edit_family_comment_path(comment.family, comment), class:"genric-btn success-border circle" %>
+      </small><br>
     <% end %>
   <% end %>
 <%= render 'comments/form'%>
-</ul>

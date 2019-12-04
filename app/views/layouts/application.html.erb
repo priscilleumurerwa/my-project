@@ -22,22 +22,25 @@
   <ul class="nav justify-content-end">
       <% if user_signed_in? %>
   <li class="nav-item">
-    <%= link_to 'grooms', grooms_url , class: 'btn btn-outline-primary'%>
+    <%= link_to 'grooms', grooms_url , class: 'text-light mx-2'%>
   </li>
   <li class="nav-item">
-    <%= link_to 'brides', brides_url  ,class: 'btn btn-outline-primary'%>
+    <%= link_to 'brides', brides_url  ,class: 'text-light mx-2'%>
   <li class="nav-item">
-    <%= link_to 'families', families_url , class: 'btn btn-outline-primary'%>
+    <%= link_to 'families', families_url , class: 'text-light mx-2'%>
   </li>
   <li class="nav-item">
-    <%= link_to 'Logout', destroy_user_session_path, method: :delete , class: 'btn btn-outline-primary'%>
+    <%= link_to 'Users', users_path , class: 'text-light mx-2'%>
+  </li>
+  <li class="nav-item">
+    <%= link_to 'Logout', destroy_user_session_path, method: :delete , class: 'btn btn-info'%>
   </li>
   <% else %>
   <li class="nav-item">
-    <li><%= link_to 'Login', new_user_session_path ,class: 'btn btn-outline-primary'%>
+    <li><%= link_to 'Login', new_user_session_path ,class: 'btn btn-info btn-sm mx-2'%>
   </li>
   <li class="nav-item">
-    <li><li><%= link_to 'Sign up', new_user_registration_path ,class: 'btn btn-outline-primary'%>
+    <li><li><%= link_to 'Sign up', new_user_registration_path ,class: 'btn btn-info btn-sm mx-2'%>
   </li>
   <% end %>
 </ul>

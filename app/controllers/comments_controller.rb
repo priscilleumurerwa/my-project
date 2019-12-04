@@ -1,7 +1,7 @@
 class CommentsController < ApplicationController
   before_action :find_post
   before_action :find_comment, only: [:destroy, :edit , :update]
-  
+
 
   def index
     @comments = Comment.all
@@ -12,7 +12,7 @@ class CommentsController < ApplicationController
     if @comment.save
       redirect_to family_path(@family)
     else
-      render 'new'
+      redirect_to family_path(@family), alert: 'Please enter the comment!!!!!'
     end
   end
 
