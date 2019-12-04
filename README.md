@@ -23,15 +23,15 @@ Services (job queues, cache servers, search engines, etc.)
 Deployment instructions
 
 # function list
-login function you login by using email and password
-editing function
-show function
-delete function
-create function
-search function
-signup function when you want to have the permission of getting to the session of logged in.
-update function for any new information.
-logout function
+* login function you login by using email and password
+* editing function
+* show function
+* delete function
+* create function
+* search function
+* signup function when you want to have the permission of getting to the session of logged in.
+* update function for any new information.
+* logout function
 ...
 # catalog design
 https://docs.google.com/spreadsheets/d/1WJEXMJCEopalVz39Ayroz0xsJ7oB8EkPIHAjySL1pxE/edit?usp=sharing
@@ -48,6 +48,6 @@ https://docs.google.com/document/d/1pYh-V_zVZTQrRoN-7v78hUe-9q8iEHjizHC7ypvyQ1U/
 # screen transition diagram
 https://docs.google.com/document/d/1-vK_vtxyomABKC5n74STMB2qQVxXFzjav2je-eXSJz4/edit?usp=sharing
 
-schedule use gem
-devise
-lansack
+# schedule use gem
+* devise
+* lansack
